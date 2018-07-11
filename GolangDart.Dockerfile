@@ -1,4 +1,4 @@
-FROM quay.io/spivegin/dart
+FROM quay.io/spivegin/dartstable
 
 ENV GO_VERSION=1.10
 RUN mkdir /opt/golang /opt/tmp /opt/src
