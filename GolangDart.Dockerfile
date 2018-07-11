@@ -1,6 +1,6 @@
-FROM quay.io/spivegin/dart:slim-v1.24.3
+FROM quay.io/spivegin/dart
 
-ENV GO_VERSION=1.9.2
+ENV GO_VERSION=1.10
 RUN mkdir /opt/golang /opt/tmp /opt/src
 ADD https://storage.googleapis.com/golang/go${GO_VERSION}.linux-amd64.tar.gz /opt/tmp/
 RUN tar -C /usr/local -xzf /opt/tmp/go${GO_VERSION}.linux-amd64.tar.gz &&\
