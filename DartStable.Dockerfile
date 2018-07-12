@@ -9,7 +9,7 @@ FROM quay.io/spivegin/tlmbasedebian
 ENV DART_VERSION 1.24.3
 
 RUN mkdir /opt/dart /opt/dart/code /opt/dart/data /opt/dart/bin /opt/dartlang
-RUN apt-get update && apt-get install -y unzip curl &&\
+RUN apt-get update && apt-get install -y unzip curl  git &&\
     cd /opt/dartlang/ && \
     curl -O https://storage.googleapis.com/dart-archive/channels/stable/release/${DART_VERSION}/sdk/dartsdk-linux-x64-release.zip && \
     unzip dartsdk-linux-x64-release.zip && \
